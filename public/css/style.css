@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+html {
+    color: #222;
+    font-family: "Josefin Sans";
+}
+
+body {
+    padding: 2rem 2.5rem;
+    background: linear-gradient(#dfe0db, #dfe0db 50%, #fcebe1 50%, #fcebe1);
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    padding: 0.75rem 0;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: salmon;
+}
+
+p {
+    line-height: 1.5;
+}
+
+section + section {
+    margin-top: 2rem;
+}
+
+li + li {
+    margin-top: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.resume {
+    
+
+    text-align: center;
+}
+
+.resume img {
+
+     border-radius: 9999px;
+     width: 15rem;
+     height: 15rem;
+}
+
+.resume p {
+
+    color: #888;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.contact ul {
+    margin-top: 2rem;
+}
+
+.contact li {
+    padding: 1rem;
+    color: #888;
+    border-bottom: 1px solid #888;
+}
+
+.skills > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem ;
+}
+
+.timeline  .event  {
+    padding: 1rem;
+}
+
+.timeline  .event{
+    display: grid;
+    grid-template-columns: 5ch 1fr;
+}
+
+.content {
+    border-left: 1px solid #888;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+.content > h3 + p {
+    margin-bottom: 1rem;
+    color: #888;
+}
+
+
+.resume-page {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    background-color: white;
+    padding: 3rem;
+    max-width: 1000px;
+    margin: auto;
+    grid-gap: 4rem;
+}
+
+
+.myForm {
+    font-size: 0.8em;
+    width: 20em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    }
+    
+    .myForm * {
+    box-sizing: border-box;
+    }
+    
+    .myForm fieldset {
+    border: none;
+    padding: 0;
+    }
+    
+    .myForm legend,
+    .myForm label {
+    padding: 0;
+    font-weight: bold;
+    }
+    
+    .myForm label.choice {
+    font-size: 0.9em;
+    font-weight: normal;
+    }
+    
+    .myForm input[type="text"],
+    .myForm input[type="tel"],
+    .myForm input[type="email"],
+    .myForm input[type="datetime-local"],
+    .myForm select,
+    .myForm textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 0.9em;
+    padding: 0.3em;
+    }
+    
+    .myForm textarea {
+    height: 100px;
+    }
+    
+    .myForm button {
+    padding: 1em;
+    border-radius: 0.5em;
+    background: #eee;
+    border: none;
+    font-weight: bold;
+    margin-top: 1em;
+    }
+    
+    .myForm button:hover {
+    background: #ccc;
+    }
+    
+    .column {
+        float: right ;
+        width: 90% ;
+      }
+      .column2 {
+        float: right;
+        width: 90%;
+      }
+   
+
+      @media only screen and (max-width:500px) {
+        /* For mobile phones: */
+        .column, .column2 {
+            float: none ;
+            width: 100% ;
+          }
+        }
+      
