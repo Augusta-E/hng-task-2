@@ -6,6 +6,7 @@ let message = document.getElementById("message");
 
 contactForm.addEventListener("submit", (e)=>{
     e.preventDefault();
+    
 
 let formData = {
     name: fname.value,
@@ -20,12 +21,12 @@ xhr.setRequestHeader("content-type", "application/json");
 xhr.onload = function(){
     console.log(xhr.responseText);
     if(xhr.responseText == "success"){
-        alert("Message sent");
+        alert("Message sent");   
+    }
         fname.value =  "";
         email.value = "";
         number.value = "";
         message.value = "";
-    }
 };
 
 xhr.send(JSON.stringify(formData));
