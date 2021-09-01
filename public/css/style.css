@@ -28,7 +28,6 @@ h2 {
     padding: 0.75rem 0;
     margin-bottom: 0.5rem;
     margin-top: 2;
-    background-color: #FCFCFE;
 }
 
 h3 {
@@ -99,12 +98,10 @@ ul {
 
 .timeline  .event  {
     padding: 1rem;
-}
-
-.timeline  .event{
     display: grid;
     grid-template-columns: 5ch 1fr;
 }
+
 
 .content {
     border-left: 1px solid #888;
@@ -119,17 +116,12 @@ ul {
 
 
 .resume-page {
-    display: grid;
-    grid-template-columns: 40% 1fr;
     background-color: white;
-    padding: 3rem;
+    padding: 2rem;
     max-width: 1000px;
     margin: auto;
-    grid-gap: 4rem;
-}
-
-.resume-page {
-	display: -ms-flex;
+    grid-gap: 3rem;
+    display: -ms-flex;
 	display: -webkit-flex;
 	display: flex;
 }
@@ -139,14 +131,12 @@ ul {
 }
 
 .column_right {
-    background-color: white;
     float: right;
     width: 60%;
     
 }
 
 .column_left {
-    background-color: #FCFCFE;
     float: left;
     width: 40%;
     
@@ -224,14 +214,7 @@ ul {
         width: 90%;
       }
    
-
-      @media only screen and (max-width:500px) {
-        /* For mobile phones: */
-        .column, .column2 {
-            float: none ;
-            width: 100% ;
-          }
-        }
+               /* For mobile phones: */
       
         @media screen and (max-width : 767px) {
        
@@ -241,13 +224,16 @@ ul {
                 float: none;
                 background-color: white;
                 margin-right: 20px;
-        
-            }
-
-
+          }
+          
+                
             .resume-page {
               
                 display: block;
             }
+            
+            .myForm {
+                width: 17em;
+             }
         }
         
